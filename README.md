@@ -2,6 +2,7 @@
 Script for posting to the iOS app 'Pythonista' forum from within the app.
 
 #Usage
+Copy the code into a .py file in Pythonista. Add your OMZ forum username and password to the top variables.
 You can use this as an action extension in Pythonista App. This requires code to be open. When you run it, it will take copy the code you are working on into the post and append/prepend HTML tags to indicate the code. A title is required and please select the right category.
 
 #Please Note
