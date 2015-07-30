@@ -17,12 +17,7 @@ def submit_post(sender):
 		alert.present('popover')
 		return None
 
-	if sc.selected_index == 0:
-		sc_option = 'General'
-	elif sc.selected_index == 1:
-		sc_option = 'Share Code'
-	elif sc.selected_index == 2:
-		sc_option = 'Questions'
+	sc_option = ('General', 'Share Code', 'Questions')[sc.selected_index]
 	
 	post_info = {'title' : str(title_field.text), 'category' : sc_option, 'text' : post_edit_box.text, 'forum' : 'pythonista'}
 	post_data = urllib.urlencode(post_info)
@@ -118,4 +113,3 @@ alert.add_subview(alert_text)
 alert.add_subview(alert_button)
 
 view.present('fullscreen')
-
